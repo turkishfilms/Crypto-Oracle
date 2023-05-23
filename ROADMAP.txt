@@ -1,0 +1,43 @@
+final project
+
+data delivery
+backend etl
+visualization
+presentation
+slide deck
+
+tensorflow ml
+scikit learn 
+
+btc - What arbitrage opportunites rn? what is the general trend per coin
+Data coinmarketcap api
+
+Web app.
+explaining arbitrage
+showing opporunities for crypto arbitrage, (5 currencies, 3 exchanges)
+shwo ml predicitons of price action buy/sell (5 currecies)
+as well as linear regressions and best fits for current data (historical)
+current market analysis
+
+
+
+data collection
+data wrangling
+data cleaning
+exploration
+data modeling
+insights
+visualization
+organiztaion presentaion
+
+
+
+Decompose the ask- We have a 75%< model of price action. AND We identify 
+Identify data sources
+define strats and metrics
+build data retireval plan
+retirve the data
+assemble and clean
+analyze for trends
+acknowledge limitations
+make the call/tell the story
