@@ -52,7 +52,7 @@ price data for BTC, ETH, DOGE, LTC, TETHER* ADA
 
 
 retrieve the data
-
+put training data in sql to show we can
 assemble and clean
 
 analyze for trends
