@@ -16,13 +16,13 @@ slide deck
 tensorflow ml
 scikit learn 
 
-btc - What arbitrage opportunites rn? what is the general trend per coin
+btc - What arbitrage opportunities right now? what is the general trend per coin
 Data coinmarketcap api
 
 Web app.
 explaining arbitrage
-showing opporunities for crypto arbitrage, (5 currencies, 3 exchanges)
-shwo ml predicitons of price action buy/sell (5 currecies)
+showing opportunities for crypto arbitrage, (5 currencies, 3 exchanges)
+show ml predictions of price action buy/sell (5 currencies)
 as well as linear regressions and best fits for current data (historical)
 current market analysis
 
@@ -35,24 +35,24 @@ exploration
 data modeling
 insights
 visualization
-organiztaion presentaion
+organizational presentation
 
 
 
-Decompose the ask- We have a 75%< model of price action. AND We identify Arbitrage opportnies
+Decompose the ask- We have a 75%< model of price action. AND We identify Arbitrage opportunities
 
 Identify data sources- coinmarketcap, binance, doge coin
 
-define strats and metrics- gather historical data for training, split into test and trainging sets, train and evaluate. deploy... Arbitrage- get rtd from each market, compare prices, show if prices differ
-metrics. arbitrage bot, how many opportunites, price difference
+define strats and metrics- gather historical data for training, split into test and training sets, train and evaluate. deploy... Arbitrage- get rtd from each market, compare prices, show if prices differ
+metrics. arbitrage bot, how many opportunities, price difference
 trend model, accuracy. yes/no. 
 
 
-build data retireval plan, Reginald: coinmarketcap, Lance: dogecoin ,Krista: Binance
+build data retrieval plan, Reginald: coinmarketcap, Lance: dogecoin ,Krista: Binance
 price data for BTC, ETH, DOGE, LTC, TETHER* ADA
 
 
-retirve the data
+retrieve the data
 
 assemble and clean
 
