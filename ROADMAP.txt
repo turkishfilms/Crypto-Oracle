@@ -43,6 +43,13 @@ Decompose the ask- We have a 75%< model of price action. AND We identify Arbitra
 
 Identify data sources- coinmarketcap, binance, doge coin
 
+Binance - cryptocurrency exchange
+DogeCoin - cryptocurrency (one of many)
+CoinMarketCap - cryptocurrency market data platform
+
+
+
+
 define strats and metrics- gather historical data for training, split into test and training sets, train and evaluate. deploy... Arbitrage- get rtd from each market, compare prices, show if prices differ
 metrics. arbitrage bot, how many opportunities, price difference
 trend model, accuracy. yes/no. 
@@ -61,3 +68,7 @@ analyze for trends
 acknowledge limitations
 
 make the call/tell the story
+
+**Possible questions to address:**
+
+how has the popularity of cryptocurrency changed over time
