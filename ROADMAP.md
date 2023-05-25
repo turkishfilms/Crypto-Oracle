@@ -13,7 +13,7 @@ slide deck
 
 
 
-Web app. - Reginald
+**Web app. - Reginald**
 explaining arbitrage
 showing opporunities for crypto arbitrage, (5 currencies, 3 exchanges)
 shwo ml predicitons of price action buy/sell (5 currecies)
