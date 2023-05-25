@@ -16,7 +16,7 @@ scikit learn
 
 1. What BTC arbitrage opportunities exist right now? 
 2. What is the general trend per coin?
-3. 
+3. Predictions for 5 cryptocrurrencies
 Data coinmarketcap api
 
 Web app.
@@ -44,7 +44,6 @@ Identify data sources- coinmarketcap, binance, doge coin
 Binance - cryptocurrency exchange
 DogeCoin - cryptocurrency (one of many)
 CoinMarketCap - cryptocurrency market data platform
-
 
 
 define strats and metrics- gather historical data for training, split into test and training sets, train and evaluate. deploy... Arbitrage- get rtd from each market, compare prices, show if prices differ
