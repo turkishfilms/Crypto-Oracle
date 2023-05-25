@@ -9,11 +9,10 @@
 5. Slide deck
 
 
-
 tensorflow ml
 scikit learn 
 
-btc - What arbitrage opportunities right now? what is the general trend per coin
+BTC - What arbitrage opportunities right now? what is the general trend per coin
 Data coinmarketcap api
 
 Web app.
@@ -22,7 +21,6 @@ showing opportunities for crypto arbitrage, (5 currencies, 3 exchanges)
 show ml predictions of price action buy/sell (5 currencies)
 as well as linear regressions and best fits for current data (historical)
 current market analysis
-
 
 
 data collection
@@ -35,7 +33,6 @@ visualization
 organizational presentation
 
 
-
 Decompose the ask- We have a 75%< model of price action. AND We identify Arbitrage opportunities
 
 Identify data sources- coinmarketcap, binance, doge coin
@@ -43,7 +40,6 @@ Identify data sources- coinmarketcap, binance, doge coin
 Binance - cryptocurrency exchange
 DogeCoin - cryptocurrency (one of many)
 CoinMarketCap - cryptocurrency market data platform
-
 
 
 
