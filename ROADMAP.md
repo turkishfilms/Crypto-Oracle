@@ -12,7 +12,11 @@
 tensorflow ml
 scikit learn 
 
-BTC - What arbitrage opportunities right now? what is the general trend per coin
+## Presentation
+
+1. What BTC arbitrage opportunities exist right now? 
+2. What is the general trend per coin?
+3. 
 Data coinmarketcap api
 
 Web app.
@@ -21,7 +25,7 @@ showing opportunities for crypto arbitrage, (5 currencies, 3 exchanges)
 show ml predictions of price action buy/sell (5 currencies)
 as well as linear regressions and best fits for current data (historical)
 current market analysis
-
+  
 
 data collection
 data wrangling
