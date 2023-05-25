@@ -1,3 +1,5 @@
+
+
 :root {
     --color1: #937025;
     --color2: #932548;
@@ -54,5 +56,5 @@ body {
 }
 
 .mainText {
-    color: var(--color1);
+    color: #ffffff;
 }
