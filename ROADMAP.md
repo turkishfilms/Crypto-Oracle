@@ -1,15 +1,16 @@
 # Final Project 
 
+## Requirements
 
-data delivery
+1. Data delivery
 
-backend etl
+2. Backend etl
 
-visualization
+3. Visualization
 
-presentation
+4. Presentation
 
-slide deck
+5. Slide deck
 
 
 
