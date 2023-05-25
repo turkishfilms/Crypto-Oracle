@@ -68,3 +68,13 @@ make the call/tell the story
 #Possible questions to address:
 
 how has the popularity of cryptocurrency changed over time
+
+
+reginald notes:
+https://nordicapis.com/9-apis-for-real-time-cryptocurrency-data/
+
+colors
+937025
+932548
+254893
+259370

@@ -1,0 +1,58 @@
+:root {
+    --color1: #937025;
+    --color2: #932548;
+    --color3: #254893;
+    --color4: #259370;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color1);
+    color: var(--color3);
+    margin: 0;
+    padding: 0;
+}
+
+.topBar {
+    background-color: var(--color2);
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.topBar .title {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.navBarLink {
+    background-color: var(--color4);
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.article {
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-size: 18px;
+    color: var(--color2);
+}
+
+.mainText {
+    color: var(--color1);
+}
