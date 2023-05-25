@@ -3,7 +3,7 @@
 ## Requirements
 
 1. Data delivery
-2. Backend etl
+2. Backend ETL
 3. Visualization
 4. Presentation
 5. Slide deck
