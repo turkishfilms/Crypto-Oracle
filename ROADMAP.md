@@ -51,8 +51,9 @@ metrics. arbitrage bot, how many opportunities, price difference
 trend model, accuracy. yes/no. 
 
 
-build data retrieval plan, Reginald: coinmarketcap, Lance: dogecoin ,Krista: Binance
-price data for BTC, ETH, DOGE, LTC, TETHER* ADA
+build data retrieval plan, Reginald: coinmarketcap, Lance: dogecoin ,Krista: Binance/CoinGecko
+price data for BTC, ETH, DOGE, LTC, TETHER* ADA 
+update symbol names to match ["BTCUSD", "ETHUSD", "DOGEUSD", "LTCUSD", "USDTUSD", "ADAUSD"]
 
 
 retrieve the data
