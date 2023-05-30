@@ -30,9 +30,11 @@ current market analysis
 data collection
 data wrangling
 data cleaning
+
 exploration
 data modeling
 insights
+
 visualization
 organizational presentation
 
