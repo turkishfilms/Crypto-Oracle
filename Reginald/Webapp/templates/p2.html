@@ -7,7 +7,6 @@
     <title>Crypto Predictions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>get the json in the html </script>
 </head>
 
 <body>
@@ -19,13 +18,17 @@
     </div>
 
     <script>
-        $(document).ready(function() {
-            $.getJSON('predictions.json', function(data) {
-                $.each(data, function(key, val) {
-                    $('#predictions').append('<div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5 class="card-title">' + key + '</h5><p class="card-text">' + val + '</p></div></div></div>');
-                });
-            });
-        });
+
+        const preds = fetch('127.0.0.1:5000/preds')
+        for (pred in preds) {
+            const prediction = `${pred}:${preds[pred]}`
+            const pElement = document.createElement('p').appendChild(
+                document.createTextNode(prediction)
+                )
+            document.getElementById('predictions').appendChild(pElement)
+        }
+    //    append('<div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5 class="card-title">' + key + '</h5><p class="card-text">' + val + '</p></div></div></div>');
+
     </script>
 
 </body>

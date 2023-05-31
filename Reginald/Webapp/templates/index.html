@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Oracle IO</title>
 </head>
+
 <body>
-    <p>you trash dawg</p>
+    <div class="arbitrageOps">
+        <table>
+            <title>Arbitrage Spots</title>
+
+            <h1 style="text-align: center;">Arbitrage Spots</h1>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Buy</th>
+                        <th>From</th>
+                        <th>At $</th>
+                        <th>Sell To</th>
+                        <th>For $</th>
+                        <th>Make $ Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+            <script>
+                // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
+                const spots = [{
+                    coin: "Bitcoin",
+                    sellerMarket: "Binance",
+                    buyPrice: 27736,
+                    buyerMarket: "CoinGecko",
+                    sellPrice: 27740
+                }]
+                const table = document.getElementById('table')
+                spots.forEach(spot => {
+                    const row = table.insertRow(-1)
+
+                    const cell0 = row.insertCell(0)
+                    const cell1 = row.insertCell(1)
+                    const cell2 = row.insertCell(2)
+                    const cell3 = row.insertCell(3)
+                    const cell4 = row.insertCell(4)
+                    const cell5 = row.insertCell(5)
+
+                    cell0.textContent = spot.coin
+                    cell1.textContent = spot.sellerMarket
+                    cell2.textContent = spot.buyPrice
+                    cell3.textContent = spot.buyerMarket
+                    cell4.textContent = spot.sellPrice
+                    cell5.textContent = spot.buyPrice - spot.sellPrice
+                })
+            </script>
 </body>
+
+</html>
+
+</div>
+<p>you trash dawg</p>
+</body>
+
 </html>
