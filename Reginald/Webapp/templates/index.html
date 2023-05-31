@@ -44,25 +44,41 @@
                     buyPrice: 27736,
                     buyerMarket: "CoinGecko",
                     sellPrice: 27740
+                }, {
+                    coin: "Bitcoin",
+                    sellerMarket: "Binance",
+                    buyPrice: 27736,
+                    buyerMarket: "CoinGecko",
+                    sellPrice: 27740
+                }, {
+                    coin: "Bitcoin",
+                    sellerMarket: "Binance",
+                    buyPrice: 27736,
+                    buyerMarket: "CoinGecko",
+                    sellPrice: 27740
+                }, {
+                    coin: "Bitcoin",
+                    sellerMarket: "Binance",
+                    buyPrice: 27736,
+                    buyerMarket: "CoinGecko",
+                    sellPrice: 27740
                 }]
-                const table = document.getElementById('table')
-                spots.forEach(spot => {
-                    const row = table.insertRow(-1)
+                const fillArbTableData = (spots) => {
+                    const table = document.getElementById('table')
+                    spots.forEach(spot => {
+                        const row = table.insertRow(-1)
+                        let counter = 0
+                        for (key in spot) {
+                            const cell = row.insertCell(counter)
+                            cell.textContent = spot[key]
+                            counter++
+                        }
+                        const cell5 = row.insertCell(counter)
+                        cell5.textContent = spot.buyPrice - spot.sellPrice
+                    })
+                }
 
-                    const cell0 = row.insertCell(0)
-                    const cell1 = row.insertCell(1)
-                    const cell2 = row.insertCell(2)
-                    const cell3 = row.insertCell(3)
-                    const cell4 = row.insertCell(4)
-                    const cell5 = row.insertCell(5)
-
-                    cell0.textContent = spot.coin
-                    cell1.textContent = spot.sellerMarket
-                    cell2.textContent = spot.buyPrice
-                    cell3.textContent = spot.buyerMarket
-                    cell4.textContent = spot.sellPrice
-                    cell5.textContent = spot.buyPrice - spot.sellPrice
-                })
+                fillArbTableData(spots)
             </script>
 </body>
 
