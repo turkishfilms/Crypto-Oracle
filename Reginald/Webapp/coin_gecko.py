@@ -11,6 +11,7 @@ def get_coingecko_coin_data():
     url = 'https://api.coingecko.com/api/v3/'
 
     # Make a GET request to retrieve the data
+    print("idkHomies")
     response = requests.get(url + 'coins/markets', params={
         'vs_currency': 'usd',
         'ids': 'bitcoin,ethereum,tether,litecoin,cardano',
@@ -19,10 +20,13 @@ def get_coingecko_coin_data():
         'page': 1,
         'sparkline': False
     })
+
     # Check if the request was successful (status code 200)
     if response.status_code == 200:
         # Retrieve the response data
         data = response.json()
+        print(data)
+        print("hey")
         #create a lists to hold
         coin_data = []
         for coin in data:
@@ -41,7 +45,8 @@ def get_coingecko_coin_data():
         # todays_price['Symbol'] = todays_price['Symbol'].replace(rename_symbols)
             
         return coin_data
-            
+    else :
+        print(response.status_code)
             
 
 # %%

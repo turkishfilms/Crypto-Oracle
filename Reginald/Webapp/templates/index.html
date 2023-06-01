@@ -36,8 +36,6 @@
                     </tr>
                 </tbody>
             </table>
-
-            <p>{%console.log(data)%}</p>
             <!-- <ul>{% for item in data %}
                 <li>{{item.name}}</li>
                 <li>{{item.place}}</li>
@@ -46,6 +44,11 @@
             </ul> -->
             <script>
                 // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
+                let coinGeckoData = "{{data}}"
+                console.log(coinGeckoData)
+
+                console.log(JSON.parse(coinGeckoData));
+
                 const spots = [{
                     coin: "Bitcoin",
                     sellerMarket: "Binance",
