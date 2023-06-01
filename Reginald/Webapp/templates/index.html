@@ -36,15 +36,10 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- <ul>{% for item in data %}
-                <li>{{item.name}}</li>
-                <li>{{item.place}}</li>
-                <li>{{item.mob}}</li>
-                {% endfor %}
-            </ul> -->
+            
             <script>
                 // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
-                let coinGeckoData = "{{data}}"
+                let coinGeckoData = '{{data | safe}}'
 
                 console.log(typeof coinGeckoData)
 
