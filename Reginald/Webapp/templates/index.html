@@ -45,7 +45,12 @@
             <script>
                 // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
                 let coinGeckoData = "{{data}}"
-                console.log(coinGeckoData)
+
+                console.log(typeof coinGeckoData)
+
+                let jsc = JSON.parse(coinGeckoData)
+
+                console.log(jsc)
 
                 console.log(JSON.parse(coinGeckoData));
 
