@@ -19,7 +19,7 @@
 
     <script>
 
-        const preds = fetch('127.0.0.1:5000/preds')
+        const preds = JSON.parse('{{data}}')
 
         for (pred in preds) {
             const prediction = `${pred}:${preds[pred]}`
