@@ -1,6 +1,11 @@
+import sys
 import requests
 import json
+
+sys.path.append("../../")  
+
 from temp.API_KEYS import coinlayer_api_key
+
 
 def get_coinlayer_prices():
     api_key = coinlayer_api_key

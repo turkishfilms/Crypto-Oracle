@@ -30,6 +30,6 @@ def get_binance_prices():
 if(__name__ == "__main__"):
     coins = get_binance_prices()
     print(coins)
-    with open("barb.json","w") as ff:
+    with open("../jsons/barb.json","w") as ff:
         json.dump(coins,ff)
 
