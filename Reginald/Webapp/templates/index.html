@@ -41,13 +41,11 @@
                 // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
                 let coinGeckoData = '{{data | safe}}'
 
-                console.log(typeof coinGeckoData)
 
                 let jsc = JSON.parse(coinGeckoData)
 
                 console.log("jsc",jsc)
 
-                console.log(JSON.parse(coinGeckoData));
 
                 const spots = [{
                     coin: "Bitcoin",
@@ -74,6 +72,7 @@
                     buyerMarket: "CoinGecko",
                     sellPrice: 27740
                 }]
+                
                 const fillArbTableData = (spots) => {
                     const table = document.getElementById('table')
                     spots.forEach(spot => {

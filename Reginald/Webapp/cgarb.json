@@ -1,0 +1,22 @@
+[
+    {
+        "Symbol": "btc",
+        "Price": 26957
+    },
+    {
+        "Symbol": "eth",
+        "Price": 1877.18
+    },
+    {
+        "Symbol": "usdt",
+        "Price": 1.0
+    },
+    {
+        "Symbol": "ada",
+        "Price": 0.372
+    },
+    {
+        "Symbol": "ltc",
+        "Price": 94.98
+    }
+]

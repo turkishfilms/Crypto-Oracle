@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # %%
-def get_coingecko_coin_data():
+def get_coingecko_prices():
     """
     Retrieve coin data from the CoinGecko API and return a DataFrame.
     """
@@ -11,7 +11,7 @@ def get_coingecko_coin_data():
     url = 'https://api.coingecko.com/api/v3/'
 
     # Make a GET request to retrieve the data
-    print("idkHomies")
+    # print("idkHomies")
     response = requests.get(url + 'coins/markets', params={
         'vs_currency': 'usd',
         'ids': 'bitcoin,ethereum,tether,litecoin,cardano',
@@ -25,8 +25,8 @@ def get_coingecko_coin_data():
     if response.status_code == 200:
         # Retrieve the response data
         data = response.json()
-        print(data)
-        print("hey")
+        # print(data)
+        print("coingecko")
         #create a lists to hold
         coin_data = []
         for coin in data:
@@ -54,6 +54,6 @@ def get_coingecko_coin_data():
 # coin_data
 
 if(__name__ == "__main__"):
-    get_coingecko_coin_data()
+    get_coingecko_prices()
 
 

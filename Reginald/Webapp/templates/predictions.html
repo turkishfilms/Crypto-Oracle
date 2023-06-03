@@ -22,9 +22,9 @@
         const preds = JSON.parse('{{data}}')
 
         for (pred in preds) {
-            const prediction = `${pred}:${preds[pred]}`
+            const predictionStr = `${pred}:${preds[pred]}`
             const pElement = document.createElement('p').appendChild(
-                document.createTextNode(prediction)
+                document.createTextNode(predictionStr)
             )
             document.getElementById('predictions').appendChild(pElement)
         }
