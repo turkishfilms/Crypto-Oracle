@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <div class="topBar">
+        <h class="title"></h>
+        <div class="navBar">
+            <div class="navBarLink"></div>
+            <div class="navBarLink"></div>
+            <div class="navBarLink"></div>
+        </div>
+    </div>
     <div class="arbitrageOps">
         <table>
             <title>Arbitrage Spots</title>
@@ -52,8 +60,6 @@
                         cell5.textContent = spot.buyPrice - spot.sellPrice
                     })
                 }
-
-
 
                 const rawData = "{{data | safe}}"
                 const data = rawData.replace(/'/g, '"');
