@@ -38,43 +38,7 @@
             </table>
             
             <script>
-                // const _spots = fetch("127.0.0.1:5000/arbitrageSpots")
-                let rawData = "{{data | safe}}"
-                let data = rawData.replace(/'/g, '"');
-
-
-                let spots = JSON.parse(data)
-
-                // console.log("jsc",jsc)
-
-
-                const spotso = [{
-                    coin: "Bitcoin",
-                    sellerMarket: "Binance",
-                    buyPrice: 27736,
-                    buyerMarket: "CoinGecko",
-                    sellPrice: 27740
-                }, {
-                    coin: "Bitcoin",
-                    sellerMarket: "Binance",
-                    buyPrice: 27736,
-                    buyerMarket: "CoinGecko",
-                    sellPrice: 27740
-                }, {
-                    coin: "Bitcoin",
-                    sellerMarket: "Binance",
-                    buyPrice: 27736,
-                    buyerMarket: "CoinGecko",
-                    sellPrice: 27740
-                }, {
-                    coin: "Bitcoin",
-                    sellerMarket: "Binance",
-                    buyPrice: 27736,
-                    buyerMarket: "CoinGecko",
-                    sellPrice: 27740
-                }]
-
-                const fillArbTableData = (spots) => {
+                    const fillArbTableData = (spots) => {
                     const table = document.getElementById('table')
                     spots.forEach(spot => {
                         const row = table.insertRow(-1)
@@ -88,6 +52,12 @@
                         cell5.textContent = spot.buyPrice - spot.sellPrice
                     })
                 }
+
+
+
+                const rawData = "{{data | safe}}"
+                const data = rawData.replace(/'/g, '"');
+                const spots = JSON.parse(data)
 
                 fillArbTableData(spots)
             </script>

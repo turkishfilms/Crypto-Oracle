@@ -16,6 +16,7 @@ def get_coinlayer_prices():
     data = response.json()
     with open("clarb.json","w") as j:
         json.dump(data,j)
+    return json.dumps(data)
     # Access the cryptocurrency values
     btc_value = data['rates']['BTC']
     eth_value = data['rates']['ETH']
@@ -51,8 +52,8 @@ def get_coinlayer_prices():
 
     coin_data = []
 
-    # for i,name in coin_names:
-    #     coin_data.append({"Symbol": name,"value": coin_values[i]})
+    for i,name in coin_names:
+        coin_data.append({"Symbol": name,"value": coin_values[i]})
 
     df = pd.DataFrame(data)
     # Display the DataFrame
