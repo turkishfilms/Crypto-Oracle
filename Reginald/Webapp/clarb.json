@@ -1,14 +1,1 @@
-{
-    "success": true,
-    "terms": "https://coinlayer.com/terms",
-    "privacy": "https://coinlayer.com/privacy",
-    "timestamp": 1685679426,
-    "target": "USD",
-    "rates": {
-        "ADA": 0.372865,
-        "BTC": 27017.558556,
-        "ETH": 1881.9817,
-        "LTC": 95.049921,
-        "USDT": 1.005088
-    }
-}
+{"success": true, "terms": "https://coinlayer.com/terms", "privacy": "https://coinlayer.com/privacy", "timestamp": 1685817065, "target": "USD", "rates": {"ADA": 0.376915, "BTC": 27254.72296, "ETH": 1896.09549, "LTC": 96.838282, "USDT": 1.006301}}

@@ -5,7 +5,8 @@ import pandas as pd
 import json
 
 # %%
-def get_binance_prices(symbols):
+def get_binance_prices():
+    symbols = ["BTCUSD", "ETHUSD", "LTCUSD", "USDTUSD","ADAUSD" ]
     """
     Retrieve current prices for specified symbols from Binance API and return a DataFrame.
 
@@ -47,7 +48,7 @@ def get_binance_prices(symbols):
 
 
 if(__name__ == "__main__"):
-    prices_binance = get_binance_prices(["BTCUSD", "ETHUSD", "LTCUSD", "USDTUSD","ADAUSD" ])
+    prices_binance = get_binance_prices()
     with open("barb.json","w")as ff:
         json.dump(prices_binance,ff)
 
