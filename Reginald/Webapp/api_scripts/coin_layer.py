@@ -1,6 +1,6 @@
 import requests
 import json
-from api_scripts.API_KEYS import coinlayer_api_key
+from temp.API_KEYS import coinlayer_api_key
 
 def get_coinlayer_prices():
     api_key = coinlayer_api_key

@@ -1,1 +1,0 @@
-coinlayer_api_key = "9d86b497a3fa7cade4d489127a4c9d3b"
