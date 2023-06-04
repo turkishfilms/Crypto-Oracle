@@ -27,7 +27,8 @@
 
     <script>
 
-        const preds = JSON.parse('{{data}}')
+        const predsRaw = '{{data|safe}}'
+        const preds = JSON.parse(predsRaw)        
 
         for (pred in preds) {
             const predictionStr = `${pred}:${preds[pred]}`
