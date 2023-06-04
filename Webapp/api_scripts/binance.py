@@ -29,7 +29,7 @@ def get_binance_prices(coinSymbols):
     return {"BTC":float(prices["BTCUSD"]),"LTC":float(prices["LTCUSD"]),"ADA":float(prices["ADAUSD"]),"ETH":float(prices["ETHUSD"]),"USDT":float(prices["USDTUSD"]),}
 
 if(__name__ == "__main__"):
-    coins = get_binance_prices()
+    coins = get_binance_prices([])
     print(coins)
     with open("../jsons/Binance_arb.json","w") as ff:
         json.dump(coins,ff)
