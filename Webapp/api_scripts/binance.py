@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import json
 
-def get_binance_prices():
+def get_binance_prices(coinSymbols):
     """
     Retrieve current prices for specified symbols from Binance API and return a DataFrame.
 

@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import json
 
-def get_coingecko_prices():
+def get_coingecko_prices(coinSymbols):
     """
     Retrieve coin data from the CoinGecko API and return a DataFrame.
     """
