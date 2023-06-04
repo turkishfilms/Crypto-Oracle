@@ -10,8 +10,11 @@ def get_binance_prices(coinSymbols):
     Returns:
         dict: Dict containing the retrieved prices.
     """
+    symbols = []
+    for symbol in coinSymbols:
+        symbols.append(symbol + "USD")
 
-    symbols = ["BTCUSD", "ETHUSD", "LTCUSD", "USDTUSD","ADAUSD" ]
+    # symbols = ["BTCUSD", "ETHUSD", "LTCUSD", "USDTUSD","ADAUSD" ]
     
     # Make a GET request to retrieve the data from Binance API
     current_prices = requests.get('https://api.binance.us/api/v3/ticker/price')

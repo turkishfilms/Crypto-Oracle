@@ -10,6 +10,7 @@ from temp.API_KEYS import coinlayer_api_key2
 
 def get_coinlayer_prices(coinSymbols):
     symbols = "BTC,ETH,LTC,USDT,ADA"
+    symbols2 = coinSymbols
     url = "http://api.coinlayer.com/live?access_key=" + coinlayer_api_key2 + "&symbols=" + symbols
 
     response = requests.get(url)
@@ -20,6 +21,7 @@ def get_coinlayer_prices(coinSymbols):
 def get_coinlayer_prices_yesterday(coinSymbols):
     api_key = coinlayer_api_key2
     symbols = "BTC,ETH,LTC,USDT,ADA"
+    symbols2 = coinSymbols
     yesterday = date.today()-timedelta(days=1)
     yesterdizzle = yesterday.isoformat()
     url = f"http://api.coinlayer.com/{yesterdizzle}?access_key=" + api_key + "&symbols=" + symbols + "&expand=1"

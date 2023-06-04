@@ -2,41 +2,26 @@ import requests
 import pandas as pd
 import json
 
-def get_coingecko_prices(coinSymbols):
+def get_coingecko_prices(coin_symbols):
     """
     Retrieve coin data from the CoinGecko API and return a DataFrame.
     """
-    # Set up the API endpoint
-    url = 'https://api.coingecko.com/api/v3/'
+    with open("list.json","r") as conv:
+        convert_to_id = json.load(conv)
 
-    # Make a GET request to retrieve the data
+    ids = ','.join([convert_to_id[coin.lower()] for coin in coin_symbols])
+
+    url = 'https://api.coingecko.com/api/v3/'
     response = requests.get(url + 'coins/markets', params={
         'vs_currency': 'usd',
-        'ids': 'bitcoin,ethereum,tether,litecoin,cardano',
+        'ids': ids,
         'order': 'market_cap_desc',
-        'per_page': 10,
-        'page': 1,
         'sparkline': False
     })
-    convert_name ={       
-        "btc":"BTC",
-        "ltc":"LTC",
-        "ada":"ADA",
-        "eth":"ETH",
-        "usdt":"USDT",
-    }
-    # Check if the request was successful (status code 200)
+   
     if response.status_code == 200:
-        # Retrieve the response data
         data = response.json()
-        # Create a lists to hold
-        coin_data = []
-        cd2 = {}
-        for coin in data:
-            coin_data.append({"Symbol": coin['symbol'], "Price": coin['current_price']})
-            cd2[convert_name[coin['symbol']]]=coin['current_price']
-        
-        return cd2
+        return {[coin['symbol'].upper()] : coin['current_price'] for coin in data}
     else :
         print(response.status_code)
             
