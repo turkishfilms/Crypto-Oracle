@@ -20,15 +20,10 @@
     </div>
     <div class="container">
         <h1 class="my-4 text-center">CRYPTO PREDICTIONS</h1>
-        <div id="predictions" class="row">
-            <!-- Predictions will be inserted here -->
-        </div>
+        
     </div>
-
     <table>
-
-
-        <h class="title">ARBITRAGE SPOTS</title>
+        <h class="title">AI PREDICTIONS</title>
             <table id="table">
                 <thead>
                     <tr>
@@ -56,7 +51,7 @@
                         const row = table.insertRow(-1)
                         const cur = current.Binance[pred]
                         const prediction = preds[pred]
-                        const direction = cur - prediction >= 0 ? "+" : "-"
+                        const direction = cur - prediction >= 0 ? "-" : "+"
                         row.insertCell(0).textContent = pred
                         row.insertCell(1).textContent = yesterday[pred].Close
                         row.insertCell(2).textContent = cur
