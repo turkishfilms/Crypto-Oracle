@@ -8,27 +8,20 @@ sys.path.append("../")
 from temp.API_KEYS import coinlayer_api_key2
 
 
-def get_coinlayer_prices(coinSymbols):
-    symbols = "BTC,ETH,LTC,USDT,ADA"
-    symbols2 = coinSymbols
-    url = "http://api.coinlayer.com/live?access_key=" + coinlayer_api_key2 + "&symbols=" + symbols
+def get_coinlayer_prices(coin_symbols):    
+    url = "http://api.coinlayer.com/live?access_key=" + coinlayer_api_key2 + "&symbols=" + ','.join(coin_symbols)
 
-    response = requests.get(url)
-    data = response.json()
+    data = requests.get(url).json()
     return data["rates"]
     
 
-def get_coinlayer_prices_yesterday(coinSymbols):
-    api_key = coinlayer_api_key2
-    symbols = "BTC,ETH,LTC,USDT,ADA"
-    symbols2 = coinSymbols
+def get_coinlayer_prices_yesterday(coin_symbols):
     yesterday = date.today()-timedelta(days=1)
     yesterdizzle = yesterday.isoformat()
-    url = f"http://api.coinlayer.com/{yesterdizzle}?access_key=" + api_key + "&symbols=" + symbols + "&expand=1"
+    
+    url = f"http://api.coinlayer.com/{yesterdizzle}?access_key=" + coinlayer_api_key2 + "&symbols=" + ','.join(coin_symbols) + "&expand=1"
 
-    response = requests.get(url)
-
-    yesterdata = response.json()
+    yesterdata  = requests.get(url).json()
     yestercoins = yesterdata["rates"]
 
     formatted_data={}
@@ -47,9 +40,6 @@ def get_coinlayer_prices_yesterday(coinSymbols):
     
 
 if(__name__=="__main__"):
-    # coins = get_coinlayer_prices()
-    # sys.path.append("../../")  
-
     coins = get_coinlayer_prices_yesterday([])
     with open("jsons/CoinLayer_Yesterday_arb.json","w") as j:
         json.dump(coins,j)
