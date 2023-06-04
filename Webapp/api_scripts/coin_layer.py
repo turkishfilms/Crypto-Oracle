@@ -14,7 +14,7 @@ def get_coinlayer_prices():
 
     response = requests.get(url)
     data = response.json()
-    return data
+    return data["rates"]
     
 
 def get_coinlayer_prices_yesterday():
@@ -26,14 +26,16 @@ def get_coinlayer_prices_yesterday():
 
     response = requests.get(url)
     data = response.json()
-    return data    
+    return data #added rates 
+    
 
 if(__name__=="__main__"):
     # coins = get_coinlayer_prices()
     # sys.path.append("../../")  
 
     coins = get_coinlayer_prices()
-    with open("../jsons/clarby2.json","w") as j:
+    with open("../jsons/CoinLayer_arb.json","w") as j:
         json.dump(coins,j)
     print(coins)
    
+
