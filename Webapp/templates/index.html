@@ -6,45 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Oracle IO</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 </head>
 
 <body>
     <div class="topBar">
-        <h class="title"></h>
         <div class="navBar">
-            <div class="navBarLink"><a href="/">Home</a></div>
-            <div class="navBarLink"><a href="/predictions">Predictions</a></div>
-            <div class="navBarLink"><a href="/learn">Learn</a></div>
+            <div class="navBarLink"><a href="/">HOME</a></div>
+            <div class="navBarLink"><a href="/predictions">PREDICTIONS</a></div>
+            <div class="navBarLink"><a href="/learn">LEARN</a></div>
         </div>
     </div>
     <div class="arbitrageOps">
         <table>
-            <title>Arbitrage Spots</title>
+        
 
-            <h1 style="text-align: center;">Arbitrage Spots</h1>
+            <h class="title">ARBITRAGE SPOTS</title>
             <table id="table">
                 <thead>
                     <tr>
-                        <th>Buy</th>
-                        <th>From</th>
-                        <th>At $</th>
-                        <th>Sell To</th>
-                        <th>For $</th>
-                        <th>Make $ Profit</th>
+                        <th>BUY</th>
+                        <th>FROM</th>
+                        <th>AT $</th>
+                        <th>SELL TO</th>
+                        <th>FOR $</th>
+                        <th>MAKE $ PROFIT</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                    </tr>
                 </tbody>
             </table>
-            <!-- <script src="{{ url_for('static', filename='js/index.js') }}"></script> -->
+            
             <script>
                 const fillArbTableData = (spots) => {
                     const table = document.getElementById('table')
