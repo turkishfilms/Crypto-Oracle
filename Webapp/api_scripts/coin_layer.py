@@ -1,12 +1,10 @@
 import sys
 import requests
-import json
-from datetime import datetime, date, timedelta
+from datetime import date, timedelta
 
 sys.path.append("../")  
 
 from temp.API_KEYS import coinlayer_api_key2
-
 
 def get_coinlayer_prices(coin_symbols):    
     url = "http://api.coinlayer.com/live?access_key=" + coinlayer_api_key2 + "&symbols=" + ','.join(coin_symbols)
@@ -40,9 +38,4 @@ def get_coinlayer_prices_yesterday(coin_symbols):
     
 
 if(__name__=="__main__"):
-    coins = get_coinlayer_prices_yesterday([])
-    with open("jsons/CoinLayer_Yesterday_arb.json","w") as j:
-        json.dump(coins,j)
-    print(coins)
-   
-
+    pass

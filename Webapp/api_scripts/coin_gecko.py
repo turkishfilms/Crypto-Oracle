@@ -1,11 +1,7 @@
 import requests
-import pandas as pd
 import json
 
 def get_coingecko_prices(coin_symbols):
-    """
-    Retrieve coin data from the CoinGecko API and return a DataFrame.
-    """
     with open("list.json","r") as conv:
         convert_to_id = json.load(conv)
 
@@ -21,10 +17,6 @@ def get_coingecko_prices(coin_symbols):
    
     return {coin['symbol'].upper() : coin['current_price'] for coin in data}
             
-if(__name__ == "__main__"):
-    coins = get_coingecko_prices()
-    print(coins)
-    with open("../jsons/CoinGecko_arb.json","w") as j:
-        json.dump(coins,j)
-
+if(__name__=="__main__"):
+    pass
 
