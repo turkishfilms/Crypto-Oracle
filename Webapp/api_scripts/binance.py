@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import json
 
-def get_binance_prices():
+def get_binance_prices(coinSymbols):
     """
     Retrieve current prices for specified symbols from Binance API and return a DataFrame.
 
@@ -25,11 +25,12 @@ def get_binance_prices():
         if symbol in symbols:
             prices[symbol] = price
 
-    return prices
+    # return prices
+    return {"BTC":float(prices["BTCUSD"]),"LTC":float(prices["LTCUSD"]),"ADA":float(prices["ADAUSD"]),"ETH":float(prices["ETHUSD"]),"USDT":float(prices["USDTUSD"]),}
 
 if(__name__ == "__main__"):
     coins = get_binance_prices()
     print(coins)
-    with open("../jsons/barb.json","w") as ff:
+    with open("../jsons/Binance_arb.json","w") as ff:
         json.dump(coins,ff)
 
