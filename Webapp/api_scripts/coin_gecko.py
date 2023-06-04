@@ -12,18 +12,14 @@ def get_coingecko_prices(coin_symbols):
     ids = ','.join([convert_to_id[coin.lower()] for coin in coin_symbols])
 
     url = 'https://api.coingecko.com/api/v3/'
-    response = requests.get(url + 'coins/markets', params={
+    data = requests.get(url + 'coins/markets', params={
         'vs_currency': 'usd',
         'ids': ids,
         'order': 'market_cap_desc',
         'sparkline': False
-    })
+    }).json()
    
-    if response.status_code == 200:
-        data = response.json()
-        return {[coin['symbol'].upper()] : coin['current_price'] for coin in data}
-    else :
-        print(response.status_code)
+    return {coin['symbol'].upper() : coin['current_price'] for coin in data}
             
 if(__name__ == "__main__"):
     coins = get_coingecko_prices()
