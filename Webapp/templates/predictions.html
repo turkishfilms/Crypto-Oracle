@@ -24,23 +24,52 @@
             <!-- Predictions will be inserted here -->
         </div>
     </div>
-    <!--  <script src="{{ url_for('static', filename='js/predictions.js') }}"></script> -->
-    <script>
 
-        const predsRaw = '{{data|safe}}'
-        const preds = JSON.parse(predsRaw)
+    <table>
 
-        for (pred in preds) {
-            const predictionStr = `${pred}:${preds[pred]}`
-            const pElement = document.createElement('p').appendChild(
-                document.createTextNode(predictionStr)
-            )
-            document.getElementById('predictions').appendChild(pElement)
-        }
-     //    append('<div class="col-md-4 mb-4"><div class="card"><div class="card-body"><h5 class="card-title">' + key + '</h5><p class="card-text">' + val + '</p></div></div></div>'); -->
 
-    </script>
+        <h class="title">ARBITRAGE SPOTS</title>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>COIN</th>
+                        <th>YESTERDAY</th>
+                        <th>NOW</th>
+                        <th>AI PREDICTION</th>
+                        <th>DIRECTION</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
 
+            <script>
+                const fillPredTableData = (data) => {
+                    const {
+                        yesterday_data: yesterday,
+                        current_data: current,
+                        pred_data: preds
+                    } = data
+                    const table = document.getElementById('table')
+                    for(pred in preds){
+                        const row = table.insertRow(-1)
+                        const cur = current.Binance[pred]
+                        const prediction = preds[pred]
+                        const direction = cur - prediction >= 0 ? "+" : "-"
+                        row.insertCell(0).textContent = pred
+                        row.insertCell(1).textContent = yesterday[pred].Close
+                        row.insertCell(2).textContent = cur
+                        row.insertCell(3).textContent = prediction
+                        row.insertCell(4).textContent = direction
+                        row.insertCell(5).textContent = direction == "+" ? "BUY" : "SELL"
+                    }
+                }
+                const dataRaw = '{{data|safe}}'
+                const data = JSON.parse(dataRaw)
+                
+                fillPredTableData(data)
+            </script>
 </body>
 
 </html>
