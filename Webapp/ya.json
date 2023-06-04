@@ -1,0 +1,286 @@
+{
+    "data": {
+        "CoinGecko": {
+            "BTC": 27181,
+            "ETH": 1898.42,
+            "USDT": 1.0,
+            "ADA": 0.380759,
+            "LTC": 95.53
+        },
+        "CoinLayer": {
+            "ADA": 0.382147,
+            "BTC": 27219.63083,
+            "ETH": 1900.257044,
+            "LTC": 95.992909,
+            "USDT": 1.007573
+        },
+        "Binance": {
+            "BTC": 27202.9,
+            "LTC": 95.98,
+            "ADA": 0.3802,
+            "ETH": 1900.42,
+            "USDT": 1.0003
+        }
+    },
+    "ops": [
+        {
+            "coin": "BTC",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 27219.63083,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 27181
+        },
+        {
+            "coin": "BTC",
+            "sellerMarket": "Binance",
+            "buyPrice": 27202.9,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 27181
+        },
+        {
+            "coin": "BTC",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 27219.63083,
+            "buyerMarket": "Binance",
+            "sellPrice": 27202.9
+        },
+        {
+            "coin": "LTC",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 95.992909,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 95.53
+        },
+        {
+            "coin": "LTC",
+            "sellerMarket": "Binance",
+            "buyPrice": 95.98,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 95.53
+        },
+        {
+            "coin": "LTC",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 95.992909,
+            "buyerMarket": "Binance",
+            "sellPrice": 95.98
+        },
+        {
+            "coin": "ETH",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 1900.257044,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 1898.42
+        },
+        {
+            "coin": "ETH",
+            "sellerMarket": "Binance",
+            "buyPrice": 1900.42,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 1898.42
+        },
+        {
+            "coin": "ETH",
+            "sellerMarket": "Binance",
+            "buyPrice": 1900.42,
+            "buyerMarket": "CoinLayer",
+            "sellPrice": 1900.257044
+        },
+        {
+            "coin": "ADA",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 0.382147,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 0.380759
+        },
+        {
+            "coin": "ADA",
+            "sellerMarket": "CoinGecko",
+            "buyPrice": 0.380759,
+            "buyerMarket": "Binance",
+            "sellPrice": 0.3802
+        },
+        {
+            "coin": "ADA",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 0.382147,
+            "buyerMarket": "Binance",
+            "sellPrice": 0.3802
+        },
+        {
+            "coin": "USDT",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 1.007573,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 1.0
+        },
+        {
+            "coin": "USDT",
+            "sellerMarket": "Binance",
+            "buyPrice": 1.0003,
+            "buyerMarket": "CoinGecko",
+            "sellPrice": 1.0
+        },
+        {
+            "coin": "USDT",
+            "sellerMarket": "CoinLayer",
+            "buyPrice": 1.007573,
+            "buyerMarket": "Binance",
+            "sellPrice": 1.0003
+        }
+    ],
+    "yester": {
+        "ADA": {
+            "Open": [
+                0.377055
+            ],
+            "High": [
+                0.3855
+            ],
+            "Low": [
+                0.37314
+            ],
+            "Close": [
+                0.377055
+            ],
+            "Adj Close": [
+                0.377055
+            ],
+            "Volume": [
+                25903145.737566
+            ],
+            "year": [
+                2023
+            ],
+            "month": [
+                6
+            ],
+            "day": [
+                3
+            ]
+        },
+        "BTC": {
+            "Open": [
+                27154.25942
+            ],
+            "High": [
+                27976.99
+            ],
+            "Low": [
+                26922.88
+            ],
+            "Close": [
+                27154.25942
+            ],
+            "Adj Close": [
+                27154.25942
+            ],
+            "Volume": [
+                990697900.52922
+            ],
+            "year": [
+                2023
+            ],
+            "month": [
+                6
+            ],
+            "day": [
+                3
+            ]
+        },
+        "ETH": {
+            "Open": [
+                1894.24637
+            ],
+            "High": [
+                1955
+            ],
+            "Low": [
+                1864.21
+            ],
+            "Close": [
+                1894.24637
+            ],
+            "Adj Close": [
+                1894.24637
+            ],
+            "Volume": [
+                673339863.836623
+            ],
+            "year": [
+                2023
+            ],
+            "month": [
+                6
+            ],
+            "day": [
+                3
+            ]
+        },
+        "LTC": {
+            "Open": [
+                96.228143
+            ],
+            "High": [
+                101.9
+            ],
+            "Low": [
+                94.142
+            ],
+            "Close": [
+                96.228143
+            ],
+            "Adj Close": [
+                96.228143
+            ],
+            "Volume": [
+                136254086.110816
+            ],
+            "year": [
+                2023
+            ],
+            "month": [
+                6
+            ],
+            "day": [
+                3
+            ]
+        },
+        "USDT": {
+            "Open": [
+                1.00788
+            ],
+            "High": [
+                1.028
+            ],
+            "Low": [
+                1.000199
+            ],
+            "Close": [
+                1.00788
+            ],
+            "Adj Close": [
+                1.00788
+            ],
+            "Volume": [
+                159523818.259494
+            ],
+            "year": [
+                2023
+            ],
+            "month": [
+                6
+            ],
+            "day": [
+                3
+            ]
+        }
+    },
+    "pred_data": {
+        "ADA": 0.37865193029366706,
+        "BTC": 27157.44860891944,
+        "ETH": 1879.4094549479764,
+        "LTC": 96.8598901002432,
+        "USDT": 1.0070953639916458
+    }
+}
