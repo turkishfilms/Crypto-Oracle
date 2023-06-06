@@ -155,6 +155,6 @@ h.heading {
     }
 
 ::selection {
-    background-color: black;
+    background-color: rgb(234, 32, 241);
     color: var(--color2);
 }
