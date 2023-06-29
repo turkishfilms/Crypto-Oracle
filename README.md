@@ -1,2 +1,2 @@
 # arbitrage-crypto-project
-A crypto currency arbitrage and prediction program
+A cryptocurrency arbitrage and prediction program. Predicts the values of cryptocurrencies for the following day on different exchange platforms in order to identify arbitrage opportunities. 
