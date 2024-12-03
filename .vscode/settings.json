@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "data.sqlite",
+            "database": "${workspaceFolder:arbitrage-crypto-project}/Reginald/data.sqlite"
+        }
+    ]
+}

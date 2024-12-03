@@ -30,16 +30,22 @@ current market analysis
 data collection
 data wrangling
 data cleaning
+
+
 exploration
 data modeling
 insights
+
+
 visualization
 organizational presentation
 
 
 Decompose the ask- We have a 75%< model of price action. AND We identify Arbitrage opportunities
 
-Identify data sources- coinmarketcap, binance, doge coin
+
+Identify data sources- coinmarketcap, binance, Coinlayer
+
 
 Binance - cryptocurrency exchange
 DogeCoin - cryptocurrency (one of many)
@@ -51,8 +57,11 @@ metrics. arbitrage bot, how many opportunities, price difference
 trend model, accuracy. yes/no. 
 
 
-build data retrieval plan, Reginald: coinmarketcap, Lance: dogecoin ,Krista: Binance
-price data for BTC, ETH, DOGE, LTC, TETHER* ADA
+
+build data retrieval plan, Reginald: coinmarketcap, Lance: Coinlayer ,Krista: Binance/CoinGecko
+price data for BTC, ETH, DOGE, LTC, TETHER* ADA 
+update symbol names to match ["BTCUSD", "ETHUSD", "DOGEUSD", "LTCUSD", "USDTUSD", "ADAUSD"]
+
 
 
 retrieve the data
@@ -68,3 +77,4 @@ make the call/tell the story
 #Possible questions to address:
 
 how has the popularity of cryptocurrency changed over time
+
