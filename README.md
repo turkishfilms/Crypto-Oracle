@@ -1,82 +1,90 @@
-# arbitrage-crypto-project
-A cryptocurrency arbitrage and prediction program. Predicts the values of cryptocurrencies for the following day on different exchange platforms in order to identify arbitrage opportunities. 
-# Final Project 
+# Arbitrage Crypto Project
 
-## Requirements
+A comprehensive cryptocurrency arbitrage and prediction program. This project leverages machine learning models to predict cryptocurrency prices for the following day across various exchange platforms, identifying arbitrage opportunities for financial gain.
 
-1. Data delivery
-2. Backend ETL
-3. Visualization
-4. Presentation
-5. Slide deck
+---
 
+## Final Project Deliverables
 
-tensorflow ml
-scikit learn 
+### Core Requirements
+1. **Data Delivery:** Collect and prepare data from multiple sources for analysis.
+2. **Backend ETL:** Extract, transform, and load data to enable seamless processing.
+3. **Visualization:** Develop intuitive visualizations to present findings effectively.
+4. **Presentation:** Communicate insights and results through a well-structured presentation.
+5. **Slide Deck:** Create a professional slide deck summarizing project outcomes.
 
-## Presentation
+---
 
-1. What BTC arbitrage opportunities exist right now? 
-2. What is the general trend per coin?
-3. Predictions for 5 cryptocrurrencies
-Data coinmarketcap api
+## Tools and Technologies
+- **Machine Learning Frameworks:** TensorFlow, scikit-learn
+- **APIs:** CoinMarketCap, Binance, CoinLayer, CoinGecko
+- **Cryptocurrencies:** BTC (Bitcoin), ETH (Ethereum), DOGE (Dogecoin), LTC (Litecoin), USDT (Tether), ADA (Cardano)
 
-Web app.
-explaining arbitrage
-showing opportunities for crypto arbitrage, (5 currencies, 3 exchanges)
-show ml predictions of price action buy/sell (5 currencies)
-as well as linear regressions and best fits for current data (historical)
-current market analysis
-  
+---
 
-data collection
-data wrangling
-data cleaning
+## Key Objectives
 
+### Presentation Goals
+1. **Current Arbitrage Opportunities:** Identify real-time BTC arbitrage possibilities.
+2. **General Trends:** Analyze and summarize trends for each cryptocurrency.
+3. **Price Predictions:** Forecast price movements for five cryptocurrencies.
 
-exploration
-data modeling
-insights
+### Web Application Features
+- **Arbitrage Explanation:** Educate users on the concept of cryptocurrency arbitrage.
+- **Opportunity Identification:** Showcase arbitrage opportunities for five cryptocurrencies across three exchanges.
+- **Machine Learning Predictions:** Present ML-based buy/sell predictions and linear regression analyses using historical data.
+- **Market Analysis:** Provide insights into current market trends and conditions.
 
+---
 
-visualization
-organizational presentation
+## Workflow and Methodology
 
+1. **Data Collection:** Leverage APIs from CoinMarketCap, Binance, and CoinLayer to retrieve cryptocurrency price data.
+2. **Data Wrangling & Cleaning:** Assemble, clean, and preprocess the data to ensure quality and accuracy.
+3. **Exploratory Data Analysis (EDA):** Analyze trends, identify patterns, and extract key insights.
+4. **Data Modeling:** Use historical data to train and evaluate machine learning models (e.g., price prediction with >75% accuracy).
+5. **Insights & Visualization:** Present findings through clear visualizations and storytelling.
 
-Decompose the ask- We have a 75%< model of price action. AND We identify Arbitrage opportunities
+---
 
+## Project Execution Plan
 
-Identify data sources- coinmarketcap, binance, Coinlayer
+1. **Define Strategies and Metrics:**
+   - Gather historical price data for training and split into test and training sets.
+   - Train and evaluate machine learning models for price prediction.
+   - Develop arbitrage bots to compare real-time prices across exchanges and identify opportunities.
+   - Metrics: Number of arbitrage opportunities, price differences, trend model accuracy (binary yes/no).
 
+2. **Data Sources:**
+   - **CoinMarketCap:** Comprehensive market data.
+   - **Binance:** Cryptocurrency exchange data.
+   - **CoinLayer/CoinGecko:** Supplementary market data.
 
-Binance - cryptocurrency exchange
-DogeCoin - cryptocurrency (one of many)
-CoinMarketCap - cryptocurrency market data platform
+3. **Data Coverage:**
+   - Cryptocurrencies: BTC, ETH, DOGE, LTC, USDT, ADA
+   - Symbols: ["BTCUSD", "ETHUSD", "DOGEUSD", "LTCUSD", "USDTUSD", "ADAUSD"]
 
+4. **Data Workflow:**
+   - **Team Roles:** 
+     - Reginald: CoinMarketCap
+     - Lance: CoinLayer
+     - Krista: Binance/CoinGecko
+   - **Steps:**
+     - Retrieve, clean, and integrate data.
+     - Analyze trends and model predictions.
+     - Acknowledge limitations and validate findings.
+     - Present the story effectively.
 
-define strats and metrics- gather historical data for training, split into test and training sets, train and evaluate. deploy... Arbitrage- get rtd from each market, compare prices, show if prices differ
-metrics. arbitrage bot, how many opportunities, price difference
-trend model, accuracy. yes/no. 
+---
 
+## Insights and Deliverables
+- **Trends and Predictions:** Demonstrate key insights derived from data.
+- **Arbitrage Opportunities:** Highlight opportunities and associated metrics.
+- **Limitations:** Address potential challenges and areas for future improvement.
 
+---
 
-build data retrieval plan, Reginald: coinmarketcap, Lance: Coinlayer ,Krista: Binance/CoinGecko
-price data for BTC, ETH, DOGE, LTC, TETHER* ADA 
-update symbol names to match ["BTCUSD", "ETHUSD", "DOGEUSD", "LTCUSD", "USDTUSD", "ADAUSD"]
-
-
-
-retrieve the data
-
-assemble and clean
-
-analyze for trends
-
-acknowledge limitations
-
-make the call/tell the story
-
-#Possible questions to address:
-
-how has the popularity of cryptocurrency changed over time
+## Additional Questions to Explore
+- How has the popularity of cryptocurrencies evolved over time?
+- What factors influence cryptocurrency price volatility and trends?
 
