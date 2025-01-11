@@ -1,6 +1,4 @@
-
-
-const fillArbTableData = (spots) => {
+const fillArbTableData = spots => {
     const table = document.getElementById('table')
     spots.forEach(spot => {
         const row = table.insertRow(-1)

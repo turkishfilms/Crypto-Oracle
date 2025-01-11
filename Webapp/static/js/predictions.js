@@ -1,5 +1,3 @@
-
-
 const predsRaw = '{{data|safe}}'
 const preds = JSON.parse(predsRaw)
 
