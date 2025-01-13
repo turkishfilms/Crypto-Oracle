@@ -1,1 +1,308 @@
-{"data": {"CoinGecko": {"BTC": 25750, "ADA": 0.351132, "LTC": 87.51, "ETH": 1813.76, "USDT": 0.999604}, "CoinLayer": {"ADA": 0.353672, "BTC": 25874.549544, "ETH": 1822.653875, "LTC": 87.967217, "USDT": 1.010076}, "Binance": {"BTC": 25819.57, "ETH": 1817.74, "LTC": 87.74, "USDT": 1.0024, "ADA": 0.3519}, "Livecoin": {"LTC": 87.5782980349757, "ADA": 0.3508942206955359, "USDT": 1.0001340796822211, "ETH": 1815.20555674992, "BTC": 25780.79884156341}}, "ops": [{"coin": "BTC", "sellerMarket": "CoinGecko", "buyPrice": 25750, "buyerMarket": "CoinLayer", "sellPrice": 25874.549544}, {"coin": "BTC", "sellerMarket": "CoinGecko", "buyPrice": 25750, "buyerMarket": "Binance", "sellPrice": 25819.57}, {"coin": "BTC", "sellerMarket": "CoinGecko", "buyPrice": 25750, "buyerMarket": "Livecoin", "sellPrice": 25780.79884156341}, {"coin": "BTC", "sellerMarket": "Binance", "buyPrice": 25819.57, "buyerMarket": "CoinLayer", "sellPrice": 25874.549544}, {"coin": "BTC", "sellerMarket": "Livecoin", "buyPrice": 25780.79884156341, "buyerMarket": "CoinLayer", "sellPrice": 25874.549544}, {"coin": "BTC", "sellerMarket": "Livecoin", "buyPrice": 25780.79884156341, "buyerMarket": "Binance", "sellPrice": 25819.57}, {"coin": "LTC", "sellerMarket": "CoinGecko", "buyPrice": 87.51, "buyerMarket": "CoinLayer", "sellPrice": 87.967217}, {"coin": "LTC", "sellerMarket": "CoinGecko", "buyPrice": 87.51, "buyerMarket": "Binance", "sellPrice": 87.74}, {"coin": "LTC", "sellerMarket": "CoinGecko", "buyPrice": 87.51, "buyerMarket": "Livecoin", "sellPrice": 87.5782980349757}, {"coin": "LTC", "sellerMarket": "Binance", "buyPrice": 87.74, "buyerMarket": "CoinLayer", "sellPrice": 87.967217}, {"coin": "LTC", "sellerMarket": "Livecoin", "buyPrice": 87.5782980349757, "buyerMarket": "CoinLayer", "sellPrice": 87.967217}, {"coin": "LTC", "sellerMarket": "Livecoin", "buyPrice": 87.5782980349757, "buyerMarket": "Binance", "sellPrice": 87.74}, {"coin": "ETH", "sellerMarket": "CoinGecko", "buyPrice": 1813.76, "buyerMarket": "CoinLayer", "sellPrice": 1822.653875}, {"coin": "ETH", "sellerMarket": "CoinGecko", "buyPrice": 1813.76, "buyerMarket": "Binance", "sellPrice": 1817.74}, {"coin": "ETH", "sellerMarket": "CoinGecko", "buyPrice": 1813.76, "buyerMarket": "Livecoin", "sellPrice": 1815.20555674992}, {"coin": "ETH", "sellerMarket": "Binance", "buyPrice": 1817.74, "buyerMarket": "CoinLayer", "sellPrice": 1822.653875}, {"coin": "ETH", "sellerMarket": "Livecoin", "buyPrice": 1815.20555674992, "buyerMarket": "CoinLayer", "sellPrice": 1822.653875}, {"coin": "ETH", "sellerMarket": "Livecoin", "buyPrice": 1815.20555674992, "buyerMarket": "Binance", "sellPrice": 1817.74}, {"coin": "ADA", "sellerMarket": "CoinGecko", "buyPrice": 0.351132, "buyerMarket": "CoinLayer", "sellPrice": 0.353672}, {"coin": "ADA", "sellerMarket": "CoinGecko", "buyPrice": 0.351132, "buyerMarket": "Binance", "sellPrice": 0.3519}, {"coin": "ADA", "sellerMarket": "Livecoin", "buyPrice": 0.3508942206955359, "buyerMarket": "CoinGecko", "sellPrice": 0.351132}, {"coin": "ADA", "sellerMarket": "Binance", "buyPrice": 0.3519, "buyerMarket": "CoinLayer", "sellPrice": 0.353672}, {"coin": "ADA", "sellerMarket": "Livecoin", "buyPrice": 0.3508942206955359, "buyerMarket": "CoinLayer", "sellPrice": 0.353672}, {"coin": "ADA", "sellerMarket": "Livecoin", "buyPrice": 0.3508942206955359, "buyerMarket": "Binance", "sellPrice": 0.3519}, {"coin": "USDT", "sellerMarket": "CoinGecko", "buyPrice": 0.999604, "buyerMarket": "CoinLayer", "sellPrice": 1.010076}, {"coin": "USDT", "sellerMarket": "CoinGecko", "buyPrice": 0.999604, "buyerMarket": "Binance", "sellPrice": 1.0024}, {"coin": "USDT", "sellerMarket": "CoinGecko", "buyPrice": 0.999604, "buyerMarket": "Livecoin", "sellPrice": 1.0001340796822211}, {"coin": "USDT", "sellerMarket": "Binance", "buyPrice": 1.0024, "buyerMarket": "CoinLayer", "sellPrice": 1.010076}, {"coin": "USDT", "sellerMarket": "Livecoin", "buyPrice": 1.0001340796822211, "buyerMarket": "CoinLayer", "sellPrice": 1.010076}, {"coin": "USDT", "sellerMarket": "Livecoin", "buyPrice": 1.0001340796822211, "buyerMarket": "Binance", "sellPrice": 1.0024}], "yester": {"ADA": {"Open": [0.379458], "High": [0.392671], "Low": [0.37443], "Close": [0.379458], "Adj Close": [0.379458], "Volume": [39182235.624933], "year": [2023], "month": [6], "day": [4]}, "BTC": {"Open": [27149.265973], "High": [27999.99], "Low": [26693], "Close": [27149.265973], "Adj Close": [27149.265973], "Volume": [1141636095.210161], "year": [2023], "month": [6], "day": [4]}, "ETH": {"Open": [1896.926111], "High": [1959.4096], "Low": [1884.11], "Close": [1896.926111], "Adj Close": [1896.926111], "Volume": [752795951.997753], "year": [2023], "month": [6], "day": [4]}, "LTC": {"Open": [94.474196], "High": [98.868243], "Low": [93.69], "Close": [94.474196], "Adj Close": [94.474196], "Volume": [123957017.921283], "year": [2023], "month": [6], "day": [4]}, "USDT": {"Open": [1.008155], "High": [1.031696], "Low": [1.000299], "Close": [1.008155], "Adj Close": [1.008155], "Volume": [165415564.541416], "year": [2023], "month": [6], "day": [4]}}, "pred_data": {"BTC": 27180.66882852462, "LTC": 94.81007923482275, "ETH": 1878.1817606590898, "ADA": 0.38100009497393295, "USDT": 1.0074851135066354}}
+{
+    "data": {
+        "Binance": {
+            "ADA": 0.3519,
+            "BTC": 25819.57,
+            "ETH": 1817.74,
+            "LTC": 87.74,
+            "USDT": 1.0024
+        },
+        "CoinGecko": {
+            "ADA": 0.351132,
+            "BTC": 25750,
+            "ETH": 1813.76,
+            "LTC": 87.51,
+            "USDT": 0.999604
+        },
+        "CoinLayer": {
+            "ADA": 0.353672,
+            "BTC": 25874.549544,
+            "ETH": 1822.653875,
+            "LTC": 87.967217,
+            "USDT": 1.010076
+        },
+        "Livecoin": {
+            "ADA": 0.350894,
+            "BTC": 25780.798842,
+            "ETH": 1815.205557,
+            "LTC": 87.578298,
+            "USDT": 1.000134
+        }
+    },
+    "ops": [
+        {
+            "buyPrice": 25750,
+            "buyerMarket": "CoinLayer",
+            "coin": "BTC",
+            "sellPrice": 25874.549544,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 25750,
+            "buyerMarket": "Binance",
+            "coin": "BTC",
+            "sellPrice": 25819.57,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 25750,
+            "buyerMarket": "Livecoin",
+            "coin": "BTC",
+            "sellPrice": 25780.798842,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 25819.57,
+            "buyerMarket": "CoinLayer",
+            "coin": "BTC",
+            "sellPrice": 25874.549544,
+            "sellerMarket": "Binance"
+        },
+        {
+            "buyPrice": 25780.798842,
+            "buyerMarket": "CoinLayer",
+            "coin": "BTC",
+            "sellPrice": 25874.549544,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 25780.798842,
+            "buyerMarket": "Binance",
+            "coin": "BTC",
+            "sellPrice": 25819.57,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 87.51,
+            "buyerMarket": "CoinLayer",
+            "coin": "LTC",
+            "sellPrice": 87.967217,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 87.51,
+            "buyerMarket": "Binance",
+            "coin": "LTC",
+            "sellPrice": 87.74,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 87.51,
+            "buyerMarket": "Livecoin",
+            "coin": "LTC",
+            "sellPrice": 87.578298,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 87.74,
+            "buyerMarket": "CoinLayer",
+            "coin": "LTC",
+            "sellPrice": 87.967217,
+            "sellerMarket": "Binance"
+        },
+        {
+            "buyPrice": 87.578298,
+            "buyerMarket": "CoinLayer",
+            "coin": "LTC",
+            "sellPrice": 87.967217,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 87.578298,
+            "buyerMarket": "Binance",
+            "coin": "LTC",
+            "sellPrice": 87.74,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 1813.76,
+            "buyerMarket": "CoinLayer",
+            "coin": "ETH",
+            "sellPrice": 1822.653875,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 1813.76,
+            "buyerMarket": "Binance",
+            "coin": "ETH",
+            "sellPrice": 1817.74,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 1813.76,
+            "buyerMarket": "Livecoin",
+            "coin": "ETH",
+            "sellPrice": 1815.205557,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 1817.74,
+            "buyerMarket": "CoinLayer",
+            "coin": "ETH",
+            "sellPrice": 1822.653875,
+            "sellerMarket": "Binance"
+        },
+        {
+            "buyPrice": 1815.205557,
+            "buyerMarket": "CoinLayer",
+            "coin": "ETH",
+            "sellPrice": 1822.653875,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 1815.205557,
+            "buyerMarket": "Binance",
+            "coin": "ETH",
+            "sellPrice": 1817.74,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 0.351132,
+            "buyerMarket": "CoinLayer",
+            "coin": "ADA",
+            "sellPrice": 0.353672,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 0.351132,
+            "buyerMarket": "Binance",
+            "coin": "ADA",
+            "sellPrice": 0.3519,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 0.350894,
+            "buyerMarket": "CoinGecko",
+            "coin": "ADA",
+            "sellPrice": 0.351132,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 0.3519,
+            "buyerMarket": "CoinLayer",
+            "coin": "ADA",
+            "sellPrice": 0.353672,
+            "sellerMarket": "Binance"
+        },
+        {
+            "buyPrice": 0.350894,
+            "buyerMarket": "CoinLayer",
+            "coin": "ADA",
+            "sellPrice": 0.353672,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 0.350894,
+            "buyerMarket": "Binance",
+            "coin": "ADA",
+            "sellPrice": 0.3519,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 0.999604,
+            "buyerMarket": "CoinLayer",
+            "coin": "USDT",
+            "sellPrice": 1.010076,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 0.999604,
+            "buyerMarket": "Binance",
+            "coin": "USDT",
+            "sellPrice": 1.0024,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 0.999604,
+            "buyerMarket": "Livecoin",
+            "coin": "USDT",
+            "sellPrice": 1.000134,
+            "sellerMarket": "CoinGecko"
+        },
+        {
+            "buyPrice": 1.0024,
+            "buyerMarket": "CoinLayer",
+            "coin": "USDT",
+            "sellPrice": 1.010076,
+            "sellerMarket": "Binance"
+        },
+        {
+            "buyPrice": 1.000134,
+            "buyerMarket": "CoinLayer",
+            "coin": "USDT",
+            "sellPrice": 1.010076,
+            "sellerMarket": "Livecoin"
+        },
+        {
+            "buyPrice": 1.000134,
+            "buyerMarket": "Binance",
+            "coin": "USDT",
+            "sellPrice": 1.0024,
+            "sellerMarket": "Livecoin"
+        }
+    ],
+    "pred_data": {
+        "ADA": 0.381,
+        "BTC": 27180.668829,
+        "ETH": 1878.181761,
+        "LTC": 94.810079,
+        "USDT": 1.007485
+    },
+    "yester": {
+        "ADA": {
+            "Adj Close": [0.379458],
+            "Close": [0.379458],
+            "High": [0.392671],
+            "Low": [0.37443],
+            "Open": [0.379458],
+            "Volume": [3.918224e7],
+            "day": [4],
+            "month": [6],
+            "year": [2023]
+        },
+        "BTC": {
+            "Adj Close": [27149.265973],
+            "Close": [27149.265973],
+            "High": [27999.99],
+            "Low": [26693],
+            "Open": [27149.265973],
+            "Volume": [1.141636e9],
+            "day": [4],
+            "month": [6],
+            "year": [2023]
+        },
+        "ETH": {
+            "Adj Close": [1896.926111],
+            "Close": [1896.926111],
+            "High": [1959.4096],
+            "Low": [1884.11],
+            "Open": [1896.926111],
+            "Volume": [7.52796e8],
+            "day": [4],
+            "month": [6],
+            "year": [2023]
+        },
+        "LTC": {
+            "Adj Close": [94.474196],
+            "Close": [94.474196],
+            "High": [98.868243],
+            "Low": [93.69],
+            "Open": [94.474196],
+            "Volume": [1.23957e8],
+            "day": [4],
+            "month": [6],
+            "year": [2023]
+        },
+        "USDT": {
+            "Adj Close": [1.008155],
+            "Close": [1.008155],
+            "High": [1.031696],
+            "Low": [1.000299],
+            "Open": [1.008155],
+            "Volume": [1.654156e8],
+            "day": [4],
+            "month": [6],
+            "year": [2023]
+        }
+    }
+}

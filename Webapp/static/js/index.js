@@ -8,8 +8,8 @@ const fillArbTableData = spots => {
             cell.textContent = spot[key]
             counter++
         }
-        const cell5 = row.insertCell(counter)
-        cell5.textContent = spot.buyPrice - spot.sellPrice
+        const profitCell = row.insertCell(counter)
+        profitCell.textContent = spot.buyPrice - spot.sellPrice
     })
 }
 

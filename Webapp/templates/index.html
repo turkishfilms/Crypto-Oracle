@@ -48,9 +48,7 @@
                                 const cell = row.insertCell(counter)
                                 const info = spot[key]
                                 const num = typeof info == typeof 100
-                                // console.log(num)
                                 cell.textContent = num ? info.toFixed(4) : info 
-                                // cell.textContent = info 
                                 counter++
                             }
                             const profit = (spot.sellPrice - spot.buyPrice)

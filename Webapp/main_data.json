@@ -1,0 +1,1 @@
+{"data": {"CoinGecko": {"BTC": 96023, "ADA": 0.989887, "LTC": 104.3, "USDT": 1.001, "ETH": 3303.88}, "Binance": {"BTC": 25073.21, "ETH": 1595.49, "LTC": 80.54, "USDT": 0.9988, "ADA": 0.2845}}, "ops": [{"coin": "USDT", "sellerMarket": "Binance", "buyPrice": 0.9988, "buyerMarket": "CoinGecko", "sellPrice": 1.001}]}

@@ -12,18 +12,18 @@ from itertools import combinations
 from flask import Flask, render_template, jsonify
 from flask_cors import CORS
 
-from api_scripts.livecoin import get_livecoin_prices
+# from api_scripts.livecoin import get_livecoin_prices
 from api_scripts.binance import get_binance_prices 
 from api_scripts.coin_gecko import get_coingecko_prices 
-from api_scripts.coin_layer import get_coinlayer_prices, get_coinlayer_prices_yesterday 
+# from api_scripts.coin_layer import get_coinlayer_prices, get_coinlayer_prices_yesterday 
 
 
 coins = ["BTC","LTC","ETH","ADA","USDT"]
 markets = {
         "CoinGecko" : get_coingecko_prices,
-        "CoinLayer" : get_coinlayer_prices,
+        # "CoinLayer" : get_coinlayer_prices,
         "Binance" : get_binance_prices,
-        "Livecoin" : get_livecoin_prices
+        # "Livecoin" : get_livecoin_prices
     }
 
 main_data = {}
@@ -37,17 +37,20 @@ def opportunity(seller_market,buy_price,buyer_market,sell_price,coin):
     "sellPrice":sell_price }
     
 
-def compare(m1,m2,coin): #add number formatting and threshold
-    m2price = main_data["data"][m2][coin]
-    m1price = main_data["data"][m1][coin]
+def compare(market1, market2, coin): #add number formatting and threshold
+    market_2_price = main_data["data"][market2][coin]
+    market_1_price = main_data["data"][market1][coin]
 
-    if(m1price == m2price):
+    # thresholding can be achieved by checking if the absolute value of the 
+    # difference between the two numbers is above a certain value
+    threshold = 0.5 #threshold is hardcoded
+    if(abs(market_1_price - market_2_price) > threshold):
         return False
     
-    if(m1price > m2price): 
-        return opportunity(m2,m2price,m1,m1price,coin)
+    if(market_1_price > market_2_price): 
+        return opportunity(market2,market_2_price,market1,market_1_price,coin)
     else:
-        return opportunity(m1,m1price,m2,m2price,coin)
+        return opportunity(market1,market_1_price,market2,market_2_price,coin)
 
 
 def get_coin_prices(stale, coins,markets):
@@ -57,8 +60,8 @@ def get_coin_prices(stale, coins,markets):
         for market in markets:
             prices_by_market[market] = markets[market](coins) 
     else:
-        with open("main_data.json","r") as cl:
-            main = json.load(cl)["data"]
+        with open("data/main_data.json","r") as current_list:
+            main = json.load(current_list)["data"]
         for market in markets:
             prices_by_market[market] = main[market]
 
@@ -79,7 +82,7 @@ def get_arbitrage_opportunities():
 
 def get_yesterdays_data(stale):
     if stale == True:
-        with open("main_data.json","r") as cl:
+        with open("data/main_data.json","r") as cl:
             yesterdata = json.load(cl)["yester"]
     else:
         yesterdata = get_coinlayer_prices_yesterday(coins)
@@ -95,9 +98,9 @@ def retrieveModels():
 
 def model_preds():
     final_pred = {}
-    coin_data = main_data["yester"]
-    for coin in coins:
-        final_pred[coin] = list(models[coin].predict(pd.DataFrame(coin_data[coin])))[0]
+    # coin_data = main_data["yester"]
+    # for coin in coins:
+    #     final_pred[coin] = list(models[coin].predict(pd.DataFrame(coin_data[coin])))[0]
     return final_pred
 
 
@@ -106,8 +109,8 @@ def get_data_on_delay():
         staleness = False
         main_data["data"] = get_coin_prices(staleness,coins,markets)
         main_data["ops"] = get_arbitrage_opportunities()
-        main_data["yester"] = get_yesterdays_data(staleness)
-        main_data["pred_data"] = model_preds()
+        # main_data["yester"] = get_yesterdays_data(staleness)
+        # main_data["pred_data"] = model_preds()
         with open("main_data.json","w") as mj:
             json.dump(main_data,mj)
         time.sleep(120) #four hours
@@ -117,8 +120,8 @@ models = retrieveModels()
 
 main_data["data"] = get_coin_prices(True,coins,markets)
 main_data["ops"] = get_arbitrage_opportunities()
-main_data["yester"] = get_yesterdays_data(True)
-main_data["pred_data"] = model_preds()
+# main_data["yester"] = get_yesterdays_data(True)
+# main_data["pred_data"] = model_preds()
 
 
 app = Flask(__name__)

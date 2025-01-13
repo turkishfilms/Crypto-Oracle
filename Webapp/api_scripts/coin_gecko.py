@@ -2,7 +2,7 @@ import requests
 import json
 
 def get_coingecko_prices(coin_symbols):
-    with open("list.json","r") as conv:
+    with open("data/list.json","r") as conv:
         convert_to_id = json.load(conv)
 
     ids = ','.join([convert_to_id[coin.lower()] for coin in coin_symbols])

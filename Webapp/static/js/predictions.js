@@ -1,10 +1,10 @@
-const predsRaw = '{{data|safe}}'
-const preds = JSON.parse(predsRaw)
+const predictionsRaw = '{{data|safe}}'
+const predictions = JSON.parse(predictionsRaw)
 
-for (pred in preds) {
-    const predictionStr = `${pred}:${preds[pred]}`
-    const pElement = document.createElement('p').appendChild(
+for (predictions in predictions) {
+    const predictionStr = `${predictions}:${predictions[pred]}`
+    const predictionElement = document.createElement('p').appendChild(
         document.createTextNode(predictionStr)
     )
-    document.getElementById('predictions').appendChild(pElement)
+    document.getElementById('predictions').appendChild(predictionElement)
 }
